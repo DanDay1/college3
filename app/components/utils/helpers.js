@@ -4,7 +4,7 @@ var axios = require('axios');
 // API Request Function
 // var schoolQuery = function(degrees, program, name){
 // var schoolQuery = function(program, name){
-var schoolQuery = function(program, name){
+var schoolQuery = function(program){
 
   //var authKey = "zCBgIj5wrFlUIvjmWu2CzFPg1PqRWzbc8zqCVnLZ";
   // Dave's key:
