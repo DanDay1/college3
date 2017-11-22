@@ -13,9 +13,17 @@ var maxReturns = 100;
 
 //comment one of the following out when running
 
-var queryURL = "https://api.data.gov/ed/collegescorecard/v1/schools.json?api_key="+authKey+"&program="+"2015.academics.program.bachelors."+program+"=1&_fields=school.name&_per_page=" + maxReturns; 
+// var queryURL = "https://api.data.gov/ed/collegescorecard/v1/schools.json?api_key="+authKey+"&program="+"2015.academics.program.bachelors."+program+"=1&_fields=school.name&_per_page=" + maxReturns; 
 
-var queryURL = "https://api.data.gov/ed/collegescorecard/v1/schools.json?api_key=Jqw0thp4crLxCS338NcnyaeQCzW7gJWJPlTcPR3t&2015.academics.program.bachelors.english=1&_fields=school.name"
+// var queryURL = "https://api.data.gov/ed/collegescorecard/v1/schools.json?api_key="+authKey + "2015.academics.program.bachelors."+program+"=1&_fields=school.name&_per_page=" + maxReturns;
+
+// var queryURL = "https://api.data.gov/ed/collegescorecard/v1/schools.json?api_key=Jqw0thp4crLxCS338NcnyaeQCzW7gJWJPlTcPR3t&2015.academics.program.bachelors.english=1&_fields=school.name"
+
+//The following two did not return errors in the call:
+
+// var queryURL = "https://api.data.gov/ed/collegescorecard/v1/schools.json?api_key="+authKey + "&2015.academics.program.bachelors."+program+"=1";
+
+var queryURL = "https://api.data.gov/ed/collegescorecard/v1/schools.json?api_key="+authKey+"&2015.academics.program.bachelors."+program+"=1&_fields=school.name&_per_page=" + maxReturns;
 
 console.log("zxx results" + queryURL);
 
