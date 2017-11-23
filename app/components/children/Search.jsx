@@ -51,13 +51,14 @@ var Search = React.createClass({
                 // degrees: search.programs,
                 // program: search.program,
                 // name: search.name
-                name: search.school.name
+                // name: search.school.name
+                name: search
               });
               return (
                 <li key={search._id} className="list-group-item" style={ {borderWidth: "0px"} }>
                   <div className="input-group">
                     <div type="text" className="form-control">
-                      <b><a href={search.school.name} target="_new" style={ {color: "black"} }>{search.school.name}</a></b>                 
+                      <b><a href={search.school} target="_new" style={ {color: "black"} }>{search.school}</a></b>                 
                       {/*<i> {search.pub_date.substring(0, 10)}</i>
                     </div> */}      
                     <span className="input-group-btn">
