@@ -55,14 +55,14 @@ var Search = React.createClass({
                 name: search
               });
               return (
-                <li key={search._id} className="list-group-item" style={ {borderWidth: "0px"} }>
+                <li key={search.id} className="list-group-item" style={ {borderWidth: "0px"} }>
                   <div className="input-group">
                     <div type="text" className="form-control">
                       <b><a href={search.school} target="_new" style={ {color: "black"} }>{search.school}</a></b>                 
                       {/*<i> {search.pub_date.substring(0, 10)}</i>
                     </div> */}      
                     <span className="input-group-btn">
-                      <button className="btn btn-success" type="button" onClick={that._handleSave} value={search._id}>Save</button>
+                      <button className="btn btn-success" type="button" onClick={that._handleSave} value={search.id}>Save</button>
                     </span>
                   </div>
                 </li>
