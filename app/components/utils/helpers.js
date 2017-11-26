@@ -85,7 +85,8 @@ var apiSave = function(schoolObj){
     var params = new URLSearchParams();
     // params.append("programs", schoolObj.programs);
     // params.append("field", schoolObj.field);
-    params.append("school.name", schoolObj.name);
+    params.append("name", schoolObj.name);
+    // params.append("school.name", schoolObj.name);
     console.log("SCHOOL NAME",schoolObj.name);
     axios.post(apiURL, params).then(function(response){
 
